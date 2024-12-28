@@ -1,4 +1,3 @@
-import { Search } from "lucide-react";
 import { CommandCard } from "../components/CommandCard";
 import { featuredCommands } from "../data/commands";
 import { Navbar } from "../components/Navbar";
@@ -15,16 +14,40 @@ const Index = () => {
             Windows Command Prompt
             <span className="text-primary"> Guide</span>
           </h1>
-          <p className="text-lg text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Your comprehensive guide to Windows Command Prompt commands
-          </p>
-          <div className="max-w-md mx-auto relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5" />
-            <input
-              type="text"
-              placeholder="Search commands..."
-              className="w-full pl-10 pr-4 py-3 rounded-lg bg-secondary/30 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary"
-            />
+          <div className="max-w-3xl mx-auto space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Master the Windows Command Line Interface with our comprehensive guide to Command Prompt commands. Whether you're a beginner learning CMD basics or an advanced user seeking specific command references, our detailed tutorials and command listings will help you become proficient in command-line operations.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Explore essential Command Prompt tutorials, learn powerful CMD commands, and discover Windows command line best practices. Our expertly curated collection of commands covers everything from basic directory navigation to advanced system administration tasks.
+            </p>
+          </div>
+        </section>
+
+        {/* Quick Start Guide */}
+        <section className="py-12 glass-card rounded-xl mb-16 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-2xl font-bold mb-6">Quick Start Guide</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-primary">Getting Started</h3>
+                <ul className="space-y-2 text-muted-foreground text-left">
+                  <li>1. Press Win + R and type 'cmd'</li>
+                  <li>2. Click 'OK' to open Command Prompt</li>
+                  <li>3. Type 'help' for a list of commands</li>
+                  <li>4. Use 'cd' to navigate directories</li>
+                </ul>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-primary">Basic Commands</h3>
+                <ul className="space-y-2 text-muted-foreground text-left">
+                  <li>• dir - List directory contents</li>
+                  <li>• cd - Change directory</li>
+                  <li>• mkdir - Create new folder</li>
+                  <li>• copy - Copy files</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
